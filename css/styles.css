@@ -12,8 +12,8 @@
 
 :root{
     --orange: #f78b00;
-    --blue: 00285f;
-    --gray: #ededed;
+    --blue:   #00285f;
+    --gray:   #ededed;
 }
 
 html, body{
@@ -43,4 +43,64 @@ nav{
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
+}
+
+.brand{
+    font-size: 24px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: var(--blue);
+    text-decoration: none;
+    border: 2px solid var(--blue);
+    padding: 8px 40px; 
+    border-radius: 4px;
+
+}
+
+nav ul li a:hover{
+    transition: background, color 0.6s;
+    background: var(--blue);
+    color: white;
+}
+
+nav ul button{
+    border: 2px solid var(--blue);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+nav ul button:hover{
+    transition: background, color 0.6s;
+    background: var(--blue);
+    color: white;
+}
+
+.content .header-block{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--blue);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
